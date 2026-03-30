@@ -1,17 +1,31 @@
 # ML4Sci_DeepLense_2026
-## 📊 Model Comparison
+# 📌 Diffusion Models for Gravitational Lensing
 
-| Model | Type | Backbone | Description | FID ↓ |
-|------|------|----------|-------------|------|
-| DDPM | Diffusion | U-Net | Baseline diffusion model | 19.5 |
-| Rectified Flow | Flow Matching | ConvNeXt | Faster flow-based generation | 28.34 |
-| Rectified Flow | Flow Matching | DiT (Transformer) | High-quality transformer-based model | **4.6** |
+## 🚀 Overview
+This project explores diffusion and flow-based models for generating strong gravitational lensing images. Multiple architectures are implemented and compared based on image quality using FID score.
 
 ---
 
-## 🧠 Key Observations
+## 📊 Model Comparison
 
-- Transformer-based models (DiT) significantly outperform CNN-based models  
+| Rank | Model | Type | Backbone | Description | FID ↓ |
+|------|------|------|----------|-------------|------|
+|  1 | Rectified Flow + DiT | Flow Matching | Transformer (DiT) | Best performing model with high-quality generation | **4.6**  |
+|  2 | DDPM | Diffusion | U-Net | Baseline diffusion model | 19.5 |
+|  3 | Rectified Flow + ConvNeXt | Flow Matching | ConvNeXt | Faster flow-based model but lower quality | 28.34 |
+
+---
+
+## 🧠 Key Insights
+
+- Transformer-based models (DiT) significantly outperform CNN-based architectures  
 - Rectified Flow improves generation efficiency and quality  
-- ConvNeXt backbone underperforms compared to DiT in this task  
-- Best performance achieved with **Rectified Flow + DiT**
+- ConvNeXt backbone struggles to capture fine lensing structures  
+- Best performance achieved with **Rectified Flow + DiT**  
+
+---
+
+## ⚙️ Setup
+
+```bash
+pip install torch torchvision numpy matplotlib
