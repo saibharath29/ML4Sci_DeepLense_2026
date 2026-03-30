@@ -135,11 +135,11 @@ Physics-Informed Neural Network (PINN) for multi-class classification:
 
 | Metric | Value |
 |------|------|
-| Accuracy | **94.49%** |
-| Macro AUC | **0.9917** |
-| AUC (no) | 0.9918 |
-| AUC (sphere) | 0.9864 |
-| AUC (vort) | 0.9969 |
+| Accuracy | **93.28%** |
+| Macro AUC | **0.9890** |
+| AUC (no) | 0.9904 |
+| AUC (sphere) | 0.9825 |
+| AUC (vort) | 0.9942 |
 
 ---
 
