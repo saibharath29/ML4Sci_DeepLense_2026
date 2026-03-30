@@ -46,7 +46,7 @@ Multi-class classification of strong gravitational lensing images into:
 | Metric | Value |
 |------|------|
 | Accuracy | **94.49%** |
-| Macro AUC | **0.9917 ** |
+| Macro AUC | **0.9917** |
 | AUC (no) | 0.9918 |
 | AUC (sphere) | 0.9864 |
 | AUC (vort) | 0.9969 |
