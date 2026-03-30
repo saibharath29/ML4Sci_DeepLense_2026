@@ -76,4 +76,78 @@ This project explores diffusion and flow-based models for generating strong grav
 - Transformer-based models (DiT) significantly outperform CNN-based architectures  
 - Rectified Flow improves generation efficiency and quality  
 - ConvNeXt backbone struggles to capture fine lensing structures  
-- Best performance achieved with **Rectified Flow + DiT**  
+- Best performance achieved with **Rectified Flow + DiT**
+
+# 📌 Test 7:PINN Classification – Gravitational Lensing
+
+## 🚀 Overview
+Physics-Informed Neural Network (PINN) for multi-class classification:
+
+- no (no substructure)
+- sphere (subhalo)
+- vort (vortex)
+
+---
+
+## 🧠 Model
+
+- Backbone: ResNet50 (ImageNet pretrained)
+- Type: Physics-Informed Learning
+- Added Components:
+  - Lensing Kernel Layer (physics-based conv)
+  - Physics Bottleneck (κ, γ prediction)
+
+---
+
+## ⚙️ Training
+
+- Total Epochs: 43  
+  - Phase 1: Warmup (5 epochs)  
+  - Phase 2: Fine-tune (25 epochs)  
+  - Phase 3: Physics Loss (13 epochs)  
+
+- Optimizer: AdamW  
+- Scheduler: Cosine Annealing  
+- Batch Size: 16  
+
+---
+
+## 🔬 Physics Integration
+
+- κ (convergence) ∈ [0,1]  
+- γ (shear) ∈ [-1,1]  
+- Physics Loss:
+  - Enforces lensing equation consistency  
+  - Added in final phase  
+
+---
+
+## 🔄 Augmentation
+
+- Rotation (±180°)  
+- Translation (±20%)  
+- Scaling (0.8–1.2)  
+- Flip (H + V)  
+
+---
+
+## 📊 Results
+
+| Metric | Value |
+|------|------|
+| Accuracy | **94.49%** |
+| Macro AUC | **0.9917** |
+| AUC (no) | 0.9918 |
+| AUC (sphere) | 0.9864 |
+| AUC (vort) | 0.9969 |
+
+---
+
+## 🧠 Insights
+
+- Physics + DL gives strong performance  
+- κ and γ improve interpretability  
+- Similar accuracy to ResNet50 baseline  
+
+
+---
