@@ -2,6 +2,12 @@
 
 
 
+### The model weights:https://drive.google.com/drive/folders/1cRQCy3btjhq86uA_FWiBsUOpmVjbMsRh?usp=sharing
+
+## The detailed description of the model architecture, training process, and implementation can be found in the accompanying notebook.
+
+
+
 
 # 📌Test 1: ResNet50 Classification – Gravitational Lensing
 
