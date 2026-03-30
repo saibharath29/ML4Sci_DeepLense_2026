@@ -141,13 +141,4 @@ Physics-Informed Neural Network (PINN) for multi-class classification:
 | AUC (sphere) | 0.9825 |
 | AUC (vort) | 0.9942 |
 
----
 
-## 🧠 Insights
-
-- Physics + DL gives strong performance  
-- κ and γ improve interpretability  
-- Similar accuracy to ResNet50 baseline  
-
-
----
