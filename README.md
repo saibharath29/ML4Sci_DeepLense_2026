@@ -66,7 +66,7 @@ This project explores diffusion and flow-based models for generating strong grav
 | Rank | Model | Type | Backbone | Description | FID ↓ |
 |------|------|------|----------|-------------|------|
 |  1 | Rectified Flow + DiT | Flow Matching | Transformer (DiT) | Best performing model with high-quality generation | **4.6**  |
-|  2 | DDPM | Diffusion | U-Net | Baseline diffusion model | 19.5 |
+|  2 | DDPM | Diffusion | DiT | Baseline diffusion model | 19.5 |
 |  3 | Rectified Flow + ConvNeXt | Flow Matching | ConvNeXt | Faster flow-based model but lower quality | 28.34 |
 
 ---
